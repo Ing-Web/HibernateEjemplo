@@ -27,7 +27,7 @@ public class Cliente implements Serializable {
 	/**
 	 * Referencia del usuario del sistema que crea el cliente
 	 */
-	private String usuarioCrea;
+	private Usuario usuarioCrea;
 
 	/**
 	 * Fecha de creacion del cliente en el sistema
@@ -38,7 +38,7 @@ public class Cliente implements Serializable {
 	 * Referencia del usuario que modifica los datos del cliente en el sistema
 	 */
 
-	private String usuarioModifica;
+	private Usuario usuarioModifica;
 
 	/**
 	 * Fecha en la que realiza la ultima modificacion al cliente
@@ -54,7 +54,7 @@ public class Cliente implements Serializable {
 	/**
 	 * Referencia del usuario que elimina los datos del cliente en el sistema
 	 */
-	private String usuarioElimina;
+	private Usuario usuarioElimina;
 
 	/**
 	 * Fecha de eliminacion del cliente en el sistema
@@ -93,11 +93,11 @@ public class Cliente implements Serializable {
 		this.correoelectronico = correoelectronico;
 	}
 
-	public String getUsuarioCrea() {
+	public Usuario getUsuarioCrea() {
 		return usuarioCrea;
 	}
 
-	public void setUsuarioCrea(String usuarioCrea) {
+	public void setUsuarioCrea(String Usuario) {
 		this.usuarioCrea = usuarioCrea;
 	}
 
@@ -109,11 +109,11 @@ public class Cliente implements Serializable {
 		this.fechaCreacion = fechaCreacion;
 	}
 
-	public String getUsuarioModifica() {
+	public Usuario getUsuarioModifica() {
 		return usuarioModifica;
 	}
 
-	public void setUsuarioModifica(String usuarioModifica) {
+	public void setUsuarioModifica(Usuario usuarioModifica) {
 		this.usuarioModifica = usuarioModifica;
 	}
 
@@ -133,11 +133,11 @@ public class Cliente implements Serializable {
 		this.eliminado = eliminado;
 	}
 
-	public String getUsuarioElimina() {
+	public Usuario getUsuarioElimina() {
 		return usuarioElimina;
 	}
 
-	public void setUsuarioElimina(String usuarioElimina) {
+	public void setUsuarioElimina(Usuario usuarioElimina) {
 		this.usuarioElimina = usuarioElimina;
 	}
 

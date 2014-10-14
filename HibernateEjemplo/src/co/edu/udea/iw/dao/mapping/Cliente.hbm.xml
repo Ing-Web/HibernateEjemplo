@@ -17,24 +17,33 @@
 		<property name="correoElectronico" type="java.lang.String">
 			<column name="EMAIL" length="120" not-null="true" />
 		</property>
-		<property name="usuarioCrea" type="java.lang.String">
+		<!-- <property name="usuarioCrea" type="java.lang.String"> -->
+		<!-- <column name="USUARIOCREA" length="15" not-null="true" /> -->
+		<!-- </property> -->
+		<many-to-one name="usuarioCrea" class="co.edu.udea.iw.dto.Usuario">
 			<column name="USUARIOCREA" length="15" not-null="true" />
-		</property>
+		</many-to-one>
 		<property name="fechaCreacion" type="java.util.Date">
 			<column name="FECHACREACION" not-null="true" />
 		</property>
-		<property name="usuarioModifica" type="java.lang.String">
+		<many-to-one name="usuarioModifica" class="co.edu.udea.iw.dto.Usuario">
 			<column name="USUARIOMODIFICA" length="15" not-null="false" />
-		</property>
+		</many-to-one>
+		<!-- <property name="usuarioModifica" type="java.lang.String"> -->
+		<!-- <column name="USUARIOMODIFICA" length="15" not-null="false" /> -->
+		<!-- </property> -->
 		<property name="fechaModificacion" type="java.util.Date">
 			<column name="FECHAMODIFICACION" not-null="false" />
 		</property>
 		<property name="eliminado" type="java.lang.Boolean">
 			<column name="ELIMINADO" length="1" />
 		</property>
-		<property name="usuarioElinima" type="java.lang.String">
+		<!-- <property name="usuarioElinima" type="java.lang.String"> -->
+		<!-- <column name="USUARIOELINIMA" not-null="false" length="15" /> -->
+		<!-- </property> -->
+		<many-to-one name="usuarioElinima" class="co.edu.udea.iw.dto.Usuario">
 			<column name="USUARIOELINIMA" not-null="false" length="15" />
-		</property>
+		</many-to-one>
 		<property name="fechaEliminacion" type="java.util.Date">
 			<column name="FECHAELIMINACION" not-null="false" />
 		</property>
